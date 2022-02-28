@@ -1,0 +1,213 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*reset*/
+*{padding: 0;margin: 0;}
+ul,li,ol{list-style: none;}
+a{text-decoration: none;color: #777;}
+img{border: none;}
+
+@keyframes scale{
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #131313;
+}
+.page{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	font-family: "나눔고딕코딩", "배달의민족 한나는 열한살 OTF", "배스킨라빈스 B", "배스킨라빈스 R", "배달의민족 도현 OTF", "배달의민족 주아 OTF", "맑은 고딕", "나눔고딕", "나눔바른고딕 Light", "나눔바른고딕 UltraLight", "sans-serif", "serif", "monospace", "fantasy", "cursive", Script, Roman, Modern;
+	opacity: 0.7;
+	z-index: 998;
+	
+}
+.header .logo{
+	width: 150px;
+	height: 100%;
+	z-index: 1000;	
+	padding: 10px 0 0 50px;
+	float: left;
+}
+.logo a img{
+	z-index: auto;
+}
+a{
+	text-decoration: none;
+}
+.nav-bar{
+	position: fixed;
+	width: 150px;
+	height: 50%;
+	clear: both;
+	padding-top: 100px;
+	z-index: 999;
+	
+}
+.nav-bar .nav-list{
+
+}
+
+.nav-bar .nav-list ul{
+	
+}
+.nav-bar .nav-list ul li {
+	list-style: none;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	
+}
+.nav-bar .nav-list ul li a:link{
+	color: seashell;
+}
+.nav-bar .nav-list ul li a:visited{
+	color: #FFFFFF;
+}
+.nav-bar .nav-list ul li a:active{
+	color: #CAF116;
+}
+.nav-bar .nav-list ul li a{
+	color: aliceblue;
+	color: black;
+}
+.nav-bar .nav-list ul li a:hover{
+	color: #476DFC;
+	transition: 0.3s;
+}
+.nav-bar .nav-list ul li a:hover{
+	color: #081B62;
+	transition: all 1.0s;
+	border-bottom-style:dashed;
+}
+.nav-bar .nav-list ul li a:hover{
+	background-color: #FFFFFF;
+	transition: 1.2;
+}
+.nav-bar .nav-list ul li a:hover{
+	transition-property: background-color, color;
+	transition-duration: 1.8s;
+	transition-timing-function: ease-out;
+	background-color:white;
+	color:black;
+	box-shadow: 2px 2px 1px black;
+}
+
+/* 애니메이션 그만그만 */
+
+/*비디오 설정*/
+.video-ly{
+	z-index: 10;
+}
+.main-video{
+	width: 100%;
+	height: auto;
+}
+
+/* 비디오 화면 설정*/
+@media screen and (max-width: 720px) {
+ .video-ly {
+	width: 750px;
+	height: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+ .video-ly {
+	width: 100%;
+	height: 100%;
+  }
+ .main-img {
+	width: 420px;
+	height: 400px;
+  }
+ .nav-bar{
+	display: none;		
+	}
+ .header .logo{
+	width: 80px;
+	height: 80px;
+	}
+}
+
+ 
+/* icon 설정  */
+.main-icon-ly{
+	float: right;
+	width: 50px;
+	height: 50px;
+	position: inherit;
+	padding-top: 40px;
+}
+.mypage:hover{
+	width: 50px;
+	height: 50px;
+	padding: auto;
+	margin: auto;
+	
+}
+
+/* ft */
+#fh5co-footer {
+  padding: 50px 0;
+	font-family: "나눔고딕코딩", "배달의민족 한나는 열한살 OTF", "배스킨라빈스 B", "배스킨라빈스 R", "배달의민족 도현 OTF", "배달의민족 주아 OTF", "맑은 고딕", "나눔고딕", "나눔바른고딕 Light", "나눔바른고딕 UltraLight", "sans-serif", "serif", "monospace", "fantasy", "cursive", Script, Roman, Modern Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 16px;
+	color: aliceblue;
+	text-align: center;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-footer {
+    padding: 5em 0;
+  }
+}
+/* 모바일 푸터 따로 설정 (제거)*/
+@media screen and (max-width: 1560px) {
+  #fh5co-footer {
+    display: none;
+  }
+}
+
+#fh5co-footer .fh5co-footer-widget {
+  padding-right: 30px !important;
+  float: left;
+  width: 100%;
+}
+#fh5co-footer .fh5co-footer-widget.top-level {
+  margin-top: 30px !important;
+}
+#fh5co-footer .fh5co-footer-widget .fh5co-footer-lead {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#fh5co-footer ul {
+  padding: 0;
+  margin: 0;
+}
+#fh5co-footer ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px 0;
+  line-height: 16px;
+}
+.maing-img-ly {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.text-img {
+	overflow: hidden;
+}
